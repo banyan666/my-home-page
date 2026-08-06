@@ -26,7 +26,12 @@ npm run build
 npm run preview
 ```
 
-构建产物输出到 `dist/`，可直接部署到 Vercel。仓库中的 `vercel.json` 已包含单页应用回退配置。
+构建产物输出到 `dist/`，可部署到 GitHub Pages 或 Vercel。仓库中的 `vercel.json` 已包含 Vercel 单页应用回退配置。
+
+## 站点访问地址
+
+`https://banyan666.github.io/my-home-page/`
+
 
 ## 宠物相册
 
