@@ -1,0 +1,39 @@
+<svg width="960" height="600" viewBox="0 0 960 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="600" rx="48" fill="#090A12"/>
+  <rect width="960" height="600" rx="48" fill="url(#bg)"/>
+  <g opacity=".22" stroke="#B9B4FF">
+    <path d="M0 460L480 210L960 460M0 510L480 260L960 510M96 600L480 260L864 600M260 600L480 260L700 600M420 600L480 260L540 600"/>
+  </g>
+  <g transform="translate(114 78)" stroke-linejoin="round">
+    <path d="M202 18L374 116L374 314L202 414L30 314V116L202 18Z" fill="#101323" fill-opacity=".74" stroke="#A8A6FF" stroke-width="3"/>
+    <path d="M202 18V216M374 116L202 216L30 116M202 216V414M30 314L202 216L374 314" stroke="#A8A6FF" stroke-opacity=".68" stroke-width="2"/>
+    <path d="M202 102L300 158V272L202 328L104 272V158L202 102Z" fill="#7357FF" fill-opacity=".12" stroke="#EF73D0" stroke-width="3"/>
+    <path d="M104 158L202 216L300 158M202 216V328" stroke="#EF73D0" stroke-opacity=".72" stroke-width="2"/>
+    <circle cx="202" cy="18" r="9" fill="#FFFFFF"/>
+    <circle cx="374" cy="314" r="9" fill="#EF73D0"/>
+    <circle cx="30" cy="314" r="9" fill="#5DE4EE"/>
+  </g>
+  <g transform="translate(574 116)">
+    <text x="0" y="22" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="4">OPEN THREE</text>
+    <text x="0" y="54" fill="#E5E3FF" fill-opacity=".42" font-family="Arial, sans-serif" font-size="10" letter-spacing="2">WEB3D / OPEN SOURCE</text>
+    <rect y="86" width="278" height="1" fill="#FFFFFF" fill-opacity=".16"/>
+    <g transform="translate(0 122)">
+      <rect width="132" height="94" rx="12" fill="#FFFFFF" fill-opacity=".06" stroke="#C9C6FF" stroke-opacity=".2"/>
+      <path d="M24 66L48 38L68 54L94 24L110 38" stroke="#8A7CFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="16" y="84" fill="#FFFFFF" fill-opacity=".46" font-family="monospace" font-size="8">THREE.JS</text>
+    </g>
+    <g transform="translate(146 122)">
+      <rect width="132" height="94" rx="12" fill="#FFFFFF" fill-opacity=".06" stroke="#C9C6FF" stroke-opacity=".2"/>
+      <circle cx="66" cy="43" r="25" stroke="#66E4EE" stroke-width="2"/><ellipse cx="66" cy="43" rx="10" ry="25" stroke="#66E4EE" stroke-width="2"/>
+      <text x="16" y="84" fill="#FFFFFF" fill-opacity=".46" font-family="monospace" font-size="8">CESIUM</text>
+    </g>
+    <g transform="translate(0 232)">
+      <rect width="278" height="76" rx="12" fill="#FFFFFF" fill-opacity=".06" stroke="#C9C6FF" stroke-opacity=".2"/>
+      <circle cx="26" cy="26" r="6" fill="#EF73D0"/><rect x="44" y="21" width="134" height="8" rx="4" fill="#FFFFFF" fill-opacity=".55"/>
+      <rect x="20" y="48" width="238" height="5" rx="2.5" fill="#FFFFFF" fill-opacity=".14"/>
+    </g>
+  </g>
+  <path d="M62 536H898" stroke="#C8C5FF" stroke-opacity=".34"/>
+  <text x="62" y="566" fill="#EEEFFF" fill-opacity=".58" font-family="monospace" font-size="11" letter-spacing="2">WEBGL SPACE / COMMUNITY NODE 02 / XYZ</text>
+  <defs><linearGradient id="bg" x1="48" y1="32" x2="910" y2="572" gradientUnits="userSpaceOnUse"><stop stop-color="#1A2255"/><stop offset=".48" stop-color="#23113A"/><stop offset="1" stop-color="#080B12"/></linearGradient></defs>
+</svg>
