@@ -56,7 +56,7 @@ export const projects = [
     tech: ['Vue 3', 'CesiumJS', 'Vite', 'Turf.js'],
     status: 'ACTIVE DEVELOPMENT',
     image: bMapViewerCover,
-    demoUrl: 'https://banyan666.github.io/BMapViewer-docs/',
+    demoUrl: 'https://banyan666.github.io/BMapViewer/',
     githubUrl: 'https://github.com/banyan666/BMapViewer',
   },
 ]

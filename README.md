@@ -30,7 +30,7 @@ npm run preview
 
 ## 站点访问地址
 
-`https://banyan666.github.io/my-home-page/`
+https://banyan666.github.io/my-home-page/
 
 
 ## 宠物相册
