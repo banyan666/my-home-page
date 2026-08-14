@@ -1,0 +1,44 @@
+<svg width="960" height="600" viewBox="0 0 960 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="600" rx="48" fill="#071018"/>
+  <rect width="960" height="600" rx="48" fill="url(#background)"/>
+  <g opacity=".16" stroke="#9DEBF0">
+    <path d="M54 96H906M54 180H906M54 264H906M54 348H906M54 432H906M54 516H906"/>
+    <path d="M104 54V546M234 54V546M364 54V546M494 54V546M624 54V546M754 54V546M884 54V546"/>
+  </g>
+  <g transform="translate(196 72)">
+    <path d="M284 38L500 164L284 290L68 164L284 38Z" fill="#102B35" stroke="#9BEFF2" stroke-opacity=".7" stroke-width="3"/>
+    <path d="M68 164V250L284 376V290L68 164Z" fill="#0B202A" stroke="#54CAD3" stroke-opacity=".58" stroke-width="3"/>
+    <path d="M500 164V250L284 376V290L500 164Z" fill="#081923" stroke="#54CAD3" stroke-opacity=".58" stroke-width="3"/>
+    <path d="M156 151L226 96L286 124L348 84L430 142L402 202L324 222L270 266L196 230L128 196L156 151Z" fill="url(#mapFill)" stroke="#C2FDFF" stroke-width="4"/>
+    <path d="M156 151V200L196 279L270 315L324 271L402 251L430 191V142L402 202L324 222L270 266L196 230L128 196L156 151Z" fill="#0B7F8D" fill-opacity=".48"/>
+    <path d="M226 96V148M286 124L270 266M348 84L324 222M156 151L270 170L402 202M196 230L270 170L324 222" stroke="#D4FEFF" stroke-opacity=".45" stroke-width="2"/>
+    <circle cx="270" cy="170" r="9" fill="#E7FFFF"/>
+    <circle cx="270" cy="170" r="23" stroke="#7CE8EE" stroke-opacity=".55" stroke-width="2"/>
+  </g>
+  <g transform="translate(72 72)">
+    <rect width="224" height="92" rx="16" fill="#081923" stroke="#93E9ED" stroke-opacity=".35"/>
+    <text x="22" y="31" fill="#89EDF0" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2.4">BMAP3D / REGION</text>
+    <path d="M22 49H202" stroke="#FFFFFF" stroke-opacity=".14"/>
+    <circle cx="30" cy="69" r="5" fill="#7CE8EE"/>
+    <rect x="46" y="65" width="92" height="8" rx="4" fill="#FFFFFF" fill-opacity=".48"/>
+    <rect x="148" y="65" width="54" height="8" rx="4" fill="#6FDFE6" fill-opacity=".26"/>
+  </g>
+  <g transform="translate(690 84)">
+    <rect width="192" height="58" rx="29" fill="#081923" stroke="#93E9ED" stroke-opacity=".35"/>
+    <circle cx="30" cy="29" r="12" fill="#72E1E7"/>
+    <text x="54" y="34" fill="#E8FEFF" font-family="monospace" font-size="12" letter-spacing="1.6">INTERACTIVE</text>
+  </g>
+  <path d="M62 536H898" stroke="#9DEBF0" stroke-opacity=".38"/>
+  <text x="62" y="566" fill="#E0FCFF" fill-opacity=".62" font-family="monospace" font-size="11" letter-spacing="2">VUE 3 / THREE.JS / D3-GEO / GSAP</text>
+  <defs>
+    <linearGradient id="background" x1="64" y1="38" x2="896" y2="566" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#123642"/>
+      <stop offset=".52" stop-color="#0A2530"/>
+      <stop offset="1" stop-color="#071018"/>
+    </linearGradient>
+    <linearGradient id="mapFill" x1="150" y1="96" x2="406" y2="262" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#87F1F2" stop-opacity=".78"/>
+      <stop offset="1" stop-color="#238D9E" stop-opacity=".48"/>
+    </linearGradient>
+  </defs>
+</svg>

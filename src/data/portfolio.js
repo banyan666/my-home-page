@@ -1,6 +1,7 @@
 import openCesiumCover from '../../assets/projects/opencesium-community.svg?url'
 import openThreeCover from '../../assets/projects/openthree-community.svg?url'
 import bMapViewerCover from '../../assets/projects/bmapviewer.svg?url'
+import bMap3DCover from '../../assets/projects/bmap3d.svg?url'
 
 const petAssets = import.meta.glob('../../assets/pet/*.jpg', {
   eager: true,
@@ -58,6 +59,22 @@ export const projects = [
     image: bMapViewerCover,
     demoUrl: 'https://banyan666.github.io/BMapViewer/',
     githubUrl: 'https://github.com/banyan666/BMapViewer',
+  },
+  {
+    id: 'bmap3d',
+    number: '04',
+    title: 'BMap3D',
+    type: 'Vue 3 / Three.js Map Component',
+    description: '开发基于 Vue 3、Three.js、d3-geo 与 GSAP 的可交互 3D 行政区地图组件，以 GeoJSON 驱动区域可视化与地图交互。',
+    summary: '面向 Vue 3 项目的可交互 3D 行政区地图组件、完整示例与配套文档。',
+    background: '传统行政区地图在三维层级、视觉表现与交互封装上需要大量重复开发。BMap3D 将 GeoJSON 投影、区域挤出、纹理材质、事件交互与动画能力整合为 Vue 3 组件，降低三维地图在业务项目中的接入成本。',
+    features: ['GeoJSON 行政区渲染', '3D 区域挤出与纹理材质', '地图事件与实例方法', '组件库、类型声明与示例文档'],
+    role: ['组件架构与 API 设计', 'Three.js 与 d3-geo 渲染开发', '交互动画与事件封装', '示例、类型声明与文档建设'],
+    tech: ['Vue 3', 'Three.js', 'd3-geo', 'GSAP'],
+    status: 'ACTIVE DEVELOPMENT',
+    image: bMap3DCover,
+    demoUrl: 'https://banyan666.github.io/BMap3D/',
+    githubUrl: 'https://github.com/banyan666/BMap3D',
   },
 ]
 
