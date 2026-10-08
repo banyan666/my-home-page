@@ -410,7 +410,14 @@ video { display: block; max-width: 100%; }
 .work-heading h2 { margin: 18px 0 16px; font-size: clamp(48px, 4.1vw, 68px); font-weight: 750; letter-spacing: -0.075em; line-height: 0.94; white-space: nowrap; }
 .work-heading > p:not(.scene-kicker) { max-width: 190px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
 
-.project-grid { display: grid; min-height: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: clamp(12px, 1.1vw, 18px); }
+.project-carousel { position: relative; width: 100%; height: 100%; min-width: 0; min-height: 0; }
+.project-grid { display: grid; width: 100%; height: 100%; min-height: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: clamp(12px, 1.1vw, 18px); }
+.project-window { position: absolute; z-index: 4; top: -23px; right: 0; color: rgba(210, 247, 247, 0.58); font-family: var(--font-mono); font-size: 7px; letter-spacing: 0.12em; pointer-events: none; }
+.project-nav { position: absolute; z-index: 5; top: 50%; display: grid; width: 40px; height: 40px; border: 1px solid rgba(183, 239, 239, 0.34); border-radius: 50%; place-items: center; background: rgba(4, 15, 22, 0.78); color: rgba(231, 253, 252, 0.92); font-family: var(--font-mono); font-size: 15px; transform: translateY(-50%); backdrop-filter: blur(10px); transition: border-color 180ms ease, background 180ms ease, color 180ms ease, opacity 180ms ease, transform 180ms ease; }
+.project-nav-prev { left: -52px; }
+.project-nav-next { right: -52px; }
+.project-nav:hover:not(:disabled) { border-color: var(--cyan); background: rgba(15, 48, 56, 0.88); color: var(--cyan); transform: translateY(-50%) scale(1.06); }
+.project-nav:disabled { opacity: 0.22; cursor: default; }
 .scene-project-card { min-width: 0; min-height: 0; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.17); border-radius: 18px; background: linear-gradient(145deg, rgba(12, 31, 34, 0.72), rgba(5, 17, 22, 0.76)); box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2); backdrop-filter: blur(12px) saturate(115%); }
 .scene-project-card > button { display: grid; width: 100%; height: 100%; min-height: 0; grid-template-rows: minmax(0, 1.15fr) minmax(0, 0.85fr); color: inherit; text-align: left; }
 .scene-project-image { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #10202a; }
@@ -606,6 +613,8 @@ video { display: block; max-width: 100%; }
   .topbar nav { gap: 16px; }
   .page-home { grid-template-columns: minmax(0, 1fr) minmax(280px, 0.5fr); gap: 5vw; }
   .work-layout { grid-template-columns: clamp(160px, 18vw, 190px) minmax(460px, 50vw); gap: 3vw; }
+  .project-nav-prev { left: -46px; }
+  .project-nav-next { right: -46px; }
   .scene-project-info { padding: 13px; }
   .page-gallery { grid-template-columns: clamp(170px, 19vw, 205px) minmax(450px, 49vw); gap: 3vw; }
   .contact-layout { grid-template-columns: minmax(0, 44vw) minmax(300px, 36vw); gap: 3vw; }
@@ -657,13 +666,18 @@ video { display: block; max-width: 100%; }
   .work-heading > p:not(.scene-kicker) { display: none; }
   .work-count { position: absolute; top: 14px; right: 0; width: 84px; margin: 0; padding: 0 0 10px; }
   .work-count strong { font-size: 34px; }
-  .project-grid { display: flex; height: calc(100% - 155px); grid-template: none; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+  .project-carousel { height: calc(100% - 155px); }
+  .project-grid { display: flex; height: 100%; grid-template: none; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
   .project-grid::-webkit-scrollbar { display: none; }
   .scene-project-card { min-width: 78vw; height: 100%; scroll-snap-align: center; }
   .scene-project-card > button { grid-template-columns: 1fr; grid-template-rows: 56% 44%; }
   .scene-project-image > span { opacity: 1; transform: none; }
   .scene-project-info h3 { margin: auto 0 8px; font-size: 25px; }
   .scene-project-info p { font-size: 9px; }
+  .project-window { top: 9px; right: 12px; padding: 5px 7px; background: rgba(4, 15, 22, 0.7); }
+  .project-nav { width: 36px; height: 36px; }
+  .project-nav-prev { left: 8px; }
+  .project-nav-next { right: 8px; }
 
   .page-gallery { display: block; padding: 90px 18px 68px; }
   .gallery-scene-heading { position: absolute; z-index: 3; top: 86px; left: 18px; padding: 16px; background: rgba(3, 10, 16, 0.56); backdrop-filter: blur(10px); }

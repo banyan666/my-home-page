@@ -77,8 +77,9 @@ const leave = (el, done) => {
               </div>
               <div class="modal-links">
                 <a v-if="project.demoUrl" :href="project.demoUrl" target="_blank" rel="noopener noreferrer">LIVE DEMO ↗</a>
+                <a v-if="project.docsUrl" :href="project.docsUrl" target="_blank" rel="noopener noreferrer">DOCS ↗</a>
                 <a v-if="project.githubUrl" :href="project.githubUrl" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
-                <span v-if="!project.demoUrl && !project.githubUrl">CASE NOTES / PRIVATE</span>
+                <span v-if="!project.demoUrl && !project.docsUrl && !project.githubUrl">CASE NOTES / PRIVATE</span>
               </div>
             </footer>
           </div>

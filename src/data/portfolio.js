@@ -2,6 +2,7 @@ import openCesiumCover from '../../assets/projects/opencesium-community.svg?url'
 import openThreeCover from '../../assets/projects/openthree-community.svg?url'
 import bMapViewerCover from '../../assets/projects/bmapviewer.svg?url'
 import bMap3DCover from '../../assets/projects/bmap3d.svg?url'
+import documentViewerCover from '../../assets/projects/document-viewer-v3.svg?url'
 
 const petAssets = import.meta.glob('../../assets/pet/*.jpg', {
   eager: true,
@@ -75,6 +76,23 @@ export const projects = [
     image: bMap3DCover,
     demoUrl: 'https://banyan666.github.io/BMap3D/',
     githubUrl: 'https://github.com/banyan666/BMap3D',
+  },
+  {
+    id: 'document-viewer-v3',
+    number: '05',
+    title: 'DocumentViewerV3',
+    type: 'Vue 3 / Multi-format Document Viewer',
+    description: '开发面向 Vue 3 的浏览器端文档预览组件，统一支持 Word、Excel、PDF、PowerPoint 与常见图片，并提供完整的预览工具。',
+    summary: '面向 Vue 3 项目的多格式文档预览组件，统一处理本地文件与远程文档。',
+    background: '不同办公文档通常需要接入多套预览方案，并分别处理加载、缩放、下载和错误状态。DocumentViewerV3 通过统一组件接口整合多格式渲染器，让业务项目可以用一致的方式预览本地 File 与远程 URL。',
+    features: ['Word、Excel、PDF、PPTX 与图片预览', '本地 File 与远程 URL', '渲染器按需加载与进度反馈', '缩放、旋转、下载、打印与主题控制'],
+    role: ['组件架构与统一 API 设计', '多格式渲染器集成与按需加载', '工具栏、事件与实例方法开发', '示例站与 VitePress 文档建设'],
+    tech: ['Vue 3', 'TypeScript', 'Vite', 'VitePress'],
+    status: 'ACTIVE DEVELOPMENT',
+    image: documentViewerCover,
+    demoUrl: 'https://banyan666.github.io/DocumentViewerV3/',
+    docsUrl: 'https://banyan666.github.io/DocumentViewerV3/docs/',
+    githubUrl: 'https://github.com/banyan666/DocumentViewerV3',
   },
 ]
 

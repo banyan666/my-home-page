@@ -146,7 +146,14 @@ const animateWorkContent = (prepared) => {
     return
   }
 
-  const rightToLeft = [cards[1], cards[3], cards[0], cards[2]].filter(Boolean)
+  const rightToLeft = window.matchMedia('(min-width: 761px)').matches
+    ? [...cards].sort((first, second) => {
+        const firstRect = first.getBoundingClientRect()
+        const secondRect = second.getBoundingClientRect()
+        const rightDifference = secondRect.right - firstRect.right
+        return Math.abs(rightDifference) > 1 ? rightDifference : firstRect.top - secondRect.top
+      })
+    : cards
   gsap.timeline({ defaults: { overwrite: true } })
     .to(rightToLeft, {
       autoAlpha: 1,
